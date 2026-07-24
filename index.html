@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirumala Garden Restaurant | Pamuru's Premium Veg & Non-Veg Dining</title>
+    
+    <!-- Meta tags for Local SEO -->
+    <meta name="description" content="Visit Tirumala Garden Restaurant on Nellore Road, Pamuru. Experience Pamuru's favorite garden restaurant serving premium yet affordable veg & non-veg specialties. Dine-in, Takeout, Delivery, & Drive-through.">
+    <meta name="keywords" content="Tirumala Garden Restaurant, Pamuru restaurant, dhaba in Pamur, Tirumala Special Biryani, chicken lollipop Pamuru, family restaurant Pamur, veg non veg restaurant Pamuru, Nellore road restaurants">
+    <meta name="author" content="Tirumala Garden Restaurant">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Tirumala Garden Restaurant | Pamuru's Premium Garden Dining">
+    <meta property="og:description" content="Experience premium cooking techniques and elevated dhaba-style dining in a spacious, clean garden ambiance at Pamuru.">
+    <meta property="og:image" content="assets/hero_biryani.jpg">
+    <meta property="og:url" content="https://tirumalagarden.com">
+    <meta property="og:type" content="restaurant">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Leaflet.js for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org JSON-LD Structured Data for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Tirumala Garden Restaurant",
+      "image": "assets/hero_biryani.jpg",
+      "telephon": "08309646462",
+      "url": "https://tirumalagarden.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nellore Rd, 3CP6+P33",
+        "addressLocality": "Pamuru",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "523108",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 15.0934,
+        "longitude": 79.4068
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:30",
+          "closes": "22:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:30",
+          "closes": "23:30"
+        }
+      ],
+      "servesCuisine": ["South Indian", "Andhra", "Tandoori", "Biryani", "Indo-Chinese"],
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Sticky Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="header-logo">
+                <span class="logo-leaf"><i class="fa-solid fa-leaf"></i></span>
+                Tirumala <span class="accent-text">Garden</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-outline btn-book-trigger">Book A Table</button>
+                <button class="btn btn-primary btn-cart-trigger" id="nav-order-btn">
+                    <i class="fa-solid fa-bag-shopping"></i> Order Online
+                    <span class="cart-badge" id="cart-badge-count">0</span>
+                </button>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="leaf-overlay leaf-1"><i class="fa-solid fa-leaf"></i></div>
+        <div class="leaf-overlay leaf-2"><i class="fa-solid fa-leaf"></i></div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle"><i class="fa-solid fa-star gold-text"></i> Pamuru's Premier Dining Destination</span>
+                <h1 class="hero-title">Pamuru’s Favorite <span class="gradient-text">Garden</span> Restaurant</h1>
+                <p class="hero-description">Delicious veg & non-veg specialties served fresh every day in a spacious garden ambiance. A place where taste meets togetherness.</p>
+                <div class="hero-ctas">
+                    <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> View Menu</a>
+                    <button class="btn btn-secondary btn-book-trigger"><i class="fa-solid fa-calendar-check"></i> Book Table</button>
+                    <button class="btn btn-outline btn-cart-trigger"><i class="fa-solid fa-motorcycle"></i> Order Online</button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-val">4.2<i class="fa-solid fa-star gold-text"></i></span>
+                        <span class="stat-lbl">Customer Rating</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">100%</span>
+                        <span class="stat-lbl">Fresh Ingredients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">Ample</span>
+                        <span class="stat-lbl">Parking & AC Seating</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="rotating-glow"></div>
+                <div class="hero-image-frame">
+                    <img src="assets/hero_biryani.jpg" alt="Signature Tirumala Platter Biryani" class="hero-food-img" id="hero-img">
+                </div>
+                <div class="floating-badge dish-badge">
+                    <div class="badge-icon"><i class="fa-solid fa-crown"></i></div>
+                    <div>
+                        <span class="badge-title">Tirumala Special</span>
+                        <span class="badge-sub">Best Seller Biryani</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,90.38,27.32c52.2,14.12,111.83,23.3,172,25.26C291.88,53.21,307,54.89,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-side scroll-animate fade-in-left">
+                    <div class="about-img-frame">
+                        <img src="assets/garden_dining.jpg" alt="Tirumala Garden Restaurant outdoor seating" class="about-main-img">
+                        <div class="experience-badge">
+                            <span class="exp-years">Garden</span>
+                            <span class="exp-text">Ambiance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content-side scroll-animate fade-in-right">
+                    <span class="section-label">A Elevated Dhaba Experience</span>
+                    <h2 class="section-title">Where Taste Meets <span class="gold-text">Togetherness</span></h2>
+                    <p class="about-text-lead">Tirumala Garden Restaurant offers a casual, open-air garden setting perfect for families, students, and corporate groups alike.</p>
+                    <p class="about-text-body">We elevate traditional dhaba-style dining into a clean, modern, and premium setting. With premium cooking techniques and high-quality ingredients, every dish is crafted to perfection. Whether you are catching up with college friends, celebrating a family milestone, or holding a team lunch, we offer the perfect setting and food to match your mood.</p>
+                    
+                    <!-- Amenities Grid -->
+                    <div class="amenities-grid">
+                        <div class="amenity-card">
+                            <div class="amenity-icon"><i class="fa-solid fa-square-parking"></i></div>
+                            <h3>Free Parking</h3>
+                            <p>Ample space for cars and bikes.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon"><i class="fa-solid fa-snowflake"></i></div>
+                            <h3>AC Dining Seating</h3>
+                            <p>Comfortable cooled family room.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon"><i class="fa-solid fa-baby-carriage"></i></div>
+                            <h3>Child-Friendly</h3>
+                            <p>High chairs & dedicated restrooms.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon"><i class="fa-solid fa-tree"></i></div>
+                            <h3>Spacious Garden</h3>
+                            <p>Open-air seating & cool evening breeze.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Flexible Dining Options</span>
+                <h2 class="section-title">Multiple Ways To <span class="gold-text">Enjoy</span></h2>
+                <p class="section-subtitle">We adapt to your schedule and preference with our premium service channels.</p>
+            </div>
+            
+            <!-- Service Tabs -->
+            <div class="service-tabs-wrapper">
+                <div class="service-tabs" role="tablist">
+                    <button class="service-tab active" role="tab" aria-selected="true" data-target="dine-in">
+                        <i class="fa-solid fa-utensils"></i> Dine-In
+                    </button>
+                    <button class="service-tab" role="tab" aria-selected="false" data-target="takeout">
+                        <i class="fa-solid fa-box"></i> Takeout
+                    </button>
+                    <button class="service-tab" role="tab" aria-selected="false" data-target="delivery">
+                        <i class="fa-solid fa-motorcycle"></i> Home Delivery
+                    </button>
+                    <button class="service-tab" role="tab" aria-selected="false" data-target="drive-thru">
+                        <i class="fa-solid fa-car-tunnel"></i> Drive-Through
+                    </button>
+                </div>
+                
+                <div class="service-tab-content">
+                    <!-- Dine-in Panel -->
+                    <div class="tab-panel active" id="dine-in" role="tabpanel">
+                        <div class="panel-grid">
+                            <div class="panel-text">
+                                <h3>Scenic Garden Dine-In Experience</h3>
+                                <p>Immerse yourself in our open-air garden setting. Beautifully lit in the evening, it provides a cozy ambiance for couples, a playful open setting for kids, and large seating areas for student parties or corporate team bonding.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i> Live music on selected weekends</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Highly trained hospitable staff</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Separate AC cabin for private dining</li>
+                                </ul>
+                                <button class="btn btn-secondary btn-book-trigger">Reserve A Table Now</button>
+                            </div>
+                            <div class="panel-icon-show">
+                                <i class="fa-solid fa-champagne-glasses"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Takeout Panel -->
+                    <div class="tab-panel" id="takeout" role="tabpanel">
+                        <div class="panel-grid">
+                            <div class="panel-text">
+                                <h3>Quick & Fresh Takeout</h3>
+                                <p>On the move? Order ahead online or via phone, and we will package your food hot and fresh in spill-proof containers. Ideal for carrying authentic flavors to your own home or office.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i> 15-minute average pickup prep time</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Eco-friendly, leakage-free packaging</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Pre-order scheduling options available</li>
+                                </ul>
+                                <button class="btn btn-primary btn-cart-trigger">Order Takeout</button>
+                            </div>
+                            <div class="panel-icon-show">
+                                <i class="fa-solid fa-box-open"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Delivery Panel -->
+                    <div class="tab-panel" id="delivery" role="tabpanel">
+                        <div class="panel-grid">
+                            <div class="panel-text">
+                                <h3>Superfast Doorstep Delivery</h3>
+                                <p>Get hot, aromatic biryani and chicken lollipops delivered directly to your doorstep in Pamuru. We maintain high hygienic standards during delivery, ensuring food reaches you just as if it came out of the kitchen.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i> Free delivery within 3km radius</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Real-time order tracking and updates</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Contactless delivery options</li>
+                                </ul>
+                                <button class="btn btn-primary btn-cart-trigger">Order Delivery Now</button>
+                            </div>
+                            <div class="panel-icon-show">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Drive-thru Panel -->
+                    <div class="tab-panel" id="drive-thru" role="tabpanel">
+                        <div class="panel-grid">
+                            <div class="panel-text">
+                                <h3>Convenient Drive-Through Pickup</h3>
+                                <p>Passing by Nellore Road? Don't even get out of your vehicle. Drive into our dedicated drive-through pickup lane, scan your order QR code or give your order number, and our staff will load the food directly into your vehicle.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i> Fast lane priority queue</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> No need to park or step out</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Ideal for travelers and highway drivers</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-outline">Find Our Location</a>
+                            </div>
+                            <div class="panel-icon-show">
+                                <i class="fa-solid fa-car-side"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Indulge in Aromatic Specialties</span>
+                <h2 class="section-title">Our Signature <span class="gold-text">Menu</span></h2>
+                <p class="section-subtitle">A curated selection of authentic Andhra recipes, rich tandoori grills, and local delicacies cooked with passion.</p>
+            </div>
+            
+            <!-- Category Filter Buttons -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Dishes</button>
+                <button class="filter-btn" data-filter="non-veg">Non-Veg</button>
+                <button class="filter-btn" data-filter="veg">Pure Veg</button>
+                <button class="filter-btn" data-filter="tandoori">Tandoori & Starters</button>
+            </div>
+            
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-container">
+                <!-- Item 1: Tirumala Special Biryani -->
+                <div class="menu-card" data-category="non-veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/hero_biryani.jpg" alt="Tirumala Special Biryani">
+                        <span class="menu-tag chef-special">Chef's Special</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Tirumala Special Biryani</h3>
+                            <span class="menu-price">₹320</span>
+                        </div>
+                        <p class="menu-desc">Premium long-grain basmati rice layered with juicy marinated meat, boiled egg, roasted cashew nuts, and slow-cooked in traditional clay pot dum style.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="1" data-name="Tirumala Special Biryani" data-price="320">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Chicken Lollipop -->
+                <div class="menu-card" data-category="tandoori">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/chicken_lollipop.jpg" alt="Chicken Lollipop">
+                        <span class="menu-tag popular">Popular Choice</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Chicken Lollipop (6 Pcs)</h3>
+                            <span class="menu-price">₹260</span>
+                        </div>
+                        <p class="menu-desc">Spicy marinated chicken wings shaped like lollipops, deep-fried to crisp perfection, and tossed in an Indo-Chinese schezwan-glaze with spring onion greens.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="2" data-name="Chicken Lollipop (6 Pcs)" data-price="260">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Chicken Majestic -->
+                <div class="menu-card" data-category="tandoori">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/chicken_majestic.jpg" alt="Chicken Majestic">
+                        <span class="menu-tag popular">Trending</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Chicken Majestic</h3>
+                            <span class="menu-price">₹280</span>
+                        </div>
+                        <p class="menu-desc">Strips of succulent chicken lightly coated, fried, and sautéed in a rich buttermilk-yoghurt glaze flavored with garlic, green chilies, and curry leaves.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="3" data-name="Chicken Majestic" data-price="280">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Paneer Special -->
+                <div class="menu-card" data-category="veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/paneer_special.jpg" alt="Paneer Special">
+                        <span class="menu-tag veg-tag">Veg Delight</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Paneer Special Kaju Masala</h3>
+                            <span class="menu-price">₹240</span>
+                        </div>
+                        <p class="menu-desc">Soft, fresh cottage cheese cubes cooked with roasted cashews in a creamy tomato-onion gravy, finished with butter, fresh cream, and aromatic kasuri methi.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator veg"><i class="fa-solid fa-circle"></i> Veg</span>
+                            <button class="add-to-cart-btn" data-id="4" data-name="Paneer Special Kaju Masala" data-price="240">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Fish Fry & Fish Roast -->
+                <div class="menu-card" data-category="non-veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/hero_biryani.jpg" alt="Fish Fry" class="placeholder-adjust">
+                        <span class="menu-tag local-spec">Andhra Style</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Nellore Fish Fry & Roast</h3>
+                            <span class="menu-price">₹290</span>
+                        </div>
+                        <p class="menu-desc">Freshwater fish steaks rubbed with a heavy dry spice mix, pan-roasted or deep-fried until crisp on Nellore griddles, served with raw onion rings and lemon wedges.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="5" data-name="Nellore Fish Fry & Roast" data-price="290">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Andhra Chicken Curry -->
+                <div class="menu-card" data-category="non-veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/hero_biryani.jpg" alt="Andhra Chicken Curry" class="placeholder-adjust">
+                        <span class="menu-tag hot">Extra Spicy</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Spicy Andhra Chicken Curry</h3>
+                            <span class="menu-price">₹270</span>
+                        </div>
+                        <p class="menu-desc">A fiery traditional Andhra chicken curry simmered in a dense, spicy gravy loaded with coriander seeds, black pepper, cinnamon, and fresh coconut paste.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="6" data-name="Spicy Andhra Chicken Curry" data-price="270">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7: Tandoori Chicken with Curry -->
+                <div class="menu-card" data-category="tandoori">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/hero_biryani.jpg" alt="Tandoori Chicken Curry" class="placeholder-adjust">
+                        <span class="menu-tag unique">Elevated Dhaba</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Tandoori Chicken with Curry</h3>
+                            <span class="menu-price">₹310</span>
+                        </div>
+                        <p class="menu-desc">Smoked charcoal-grilled clay-oven tandoori chicken legs simmered inside an aromatic butter gravy. Combining smoky grill flavor with rich gravy.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="7" data-name="Tandoori Chicken with Curry" data-price="310">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8: Gongura Chicken Curry -->
+                <div class="menu-card" data-category="non-veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/gongura_chicken.jpg" alt="Andhra Gongura Chicken Curry">
+                        <span class="menu-tag chef-special">Andhra Delight</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Andhra Gongura Chicken</h3>
+                            <span class="menu-price">₹295</span>
+                        </div>
+                        <p class="menu-desc">A classic fiery and tangy recipe of chicken slow-cooked in rich sorrel leaves (gongura) paste, organic spices, and whole roasted Guntur red chilies.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="8" data-name="Andhra Gongura Chicken" data-price="295">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9: Mughlai Chicken Biryani -->
+                <div class="menu-card" data-category="non-veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/hero_biryani.jpg" alt="Mughlai Chicken Biryani">
+                        <span class="menu-tag unique">Royal Classic</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Mughlai Chicken Biryani</h3>
+                            <span class="menu-price">₹340</span>
+                        </div>
+                        <p class="menu-desc">Fragrant long-grain basmati rice cooked with layered marinated chicken, rich saffron, milk, cardamoms, and whole almonds, served with boiled egg halves.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="9" data-name="Mughlai Chicken Biryani" data-price="340">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10: Tandoori Chicken (Dry) -->
+                <div class="menu-card" data-category="tandoori">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/chicken_lollipop.jpg" alt="Clay Oven Tandoori Chicken" class="placeholder-adjust">
+                        <span class="menu-tag hot">Tandoor Grill</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Tandoori Chicken (Dry - Full)</h3>
+                            <span class="menu-price">₹390</span>
+                        </div>
+                        <p class="menu-desc">Whole chicken deeply scored and marinated in spiced yoghurt, mustard oil, and ginger-garlic paste, skewered and roasted to a smoky finish in our clay oven.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="10" data-name="Tandoori Chicken (Dry - Full)" data-price="390">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 11: Kadhai Paneer Masala -->
+                <div class="menu-card" data-category="veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/paneer_special.jpg" alt="Kadhai Paneer Masala">
+                        <span class="menu-tag veg-tag">Veg Classic</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Veg Kadhai Paneer</h3>
+                            <span class="menu-price">₹230</span>
+                        </div>
+                        <p class="menu-desc">Fresh cottage cheese cubes tossed with crunchy bell peppers, onions, tomatoes, and freshly ground roasted kadhai spices in a heavy iron wok gravy.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator veg"><i class="fa-solid fa-circle"></i> Veg</span>
+                            <button class="add-to-cart-btn" data-id="11" data-name="Veg Kadhai Paneer" data-price="230">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 12: Chicken Lollipop Dry Roast -->
+                <div class="menu-card" data-category="tandoori">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/chicken_lollipop.jpg" alt="Chicken Lollipop Dry Roast">
+                        <span class="menu-tag popular">Crisp Starter</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Chicken Lollipop Dry Roast</h3>
+                            <span class="menu-price">₹270</span>
+                        </div>
+                        <p class="menu-desc">Dry pan-roasted chicken lollipop drummettes wok-fried with fresh ginger, green chilies, curry leaves, crushed pepper, and local herbs.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator non-veg"><i class="fa-solid fa-circle"></i> Non-Veg</span>
+                            <button class="add-to-cart-btn" data-id="12" data-name="Chicken Lollipop Dry Roast" data-price="270">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 13: Special Kaju Tomato Curry -->
+                <div class="menu-card" data-category="veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/paneer_special.jpg" alt="Special Kaju Tomato Curry">
+                        <span class="menu-tag chef-special">Chef Special</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Special Kaju Tomato Curry</h3>
+                            <span class="menu-price">₹260</span>
+                        </div>
+                        <p class="menu-desc">Whole roasted cashew nuts simmered in a rich, creamy, and spicy tomato-onion gravy, finished with fresh butter, kasuri methi, and cream.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator veg"><i class="fa-solid fa-circle"></i> Veg</span>
+                            <button class="add-to-cart-btn" data-id="13" data-name="Special Kaju Tomato Curry" data-price="260">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 14: Garden Fresh Veg Biryani -->
+                <div class="menu-card" data-category="veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/hero_biryani.jpg" alt="Garden Fresh Veg Biryani">
+                        <span class="menu-tag popular">Aromatic Dum</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Garden Fresh Veg Biryani</h3>
+                            <span class="menu-price">₹220</span>
+                        </div>
+                        <p class="menu-desc">Fragrant long-grain basmati rice layered with fresh garden vegetables, paneer cubes, fresh mint, and coriander, slow-cooked in clay-pot dum style.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator veg"><i class="fa-solid fa-circle"></i> Veg</span>
+                            <button class="add-to-cart-btn" data-id="14" data-name="Garden Fresh Veg Biryani" data-price="220">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 15: Spicy Kadhai Mushroom -->
+                <div class="menu-card" data-category="veg">
+                    <div class="menu-img-wrapper">
+                        <img src="assets/paneer_special.jpg" alt="Spicy Kadhai Mushroom" class="placeholder-adjust">
+                        <span class="menu-tag hot">Spicy Veg</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title-row">
+                            <h3>Spicy Kadhai Mushroom</h3>
+                            <span class="menu-price">₹210</span>
+                        </div>
+                        <p class="menu-desc">Fresh button mushrooms sautéed with bell peppers, onions, tomatoes, and freshly roasted kadhai spices in a heavy iron wok gravy.</p>
+                        <div class="menu-card-footer">
+                            <span class="dish-indicator veg"><i class="fa-solid fa-circle"></i> Veg</span>
+                            <button class="add-to-cart-btn" data-id="15" data-name="Spicy Kadhai Mushroom" data-price="210">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-bottom-cta text-center">
+                <p>Want something specific? Give us a call or view our full detailed physical menu.</p>
+                <a href="tel:08309646462" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Call 08309646462</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section" id="why-us">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-content scroll-animate fade-in-left">
+                    <span class="section-label">Our Commitment to Quality</span>
+                    <h2 class="section-title">More Than Just Food — It’s An <span class="gold-text">Experience</span>.</h2>
+                    <p class="why-lead-desc">Whether it's raw ingredient selection or ambient setups, we maintain standards that make your dining experience memorable.</p>
+                    
+                    <ul class="why-checklist">
+                        <li>
+                            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4>Premium Taste at Affordable Prices</h4>
+                                <p>Rich traditional recipe flavors using local spices at budget-friendly student and family rates.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4>Family-Friendly Garden Ambiance</h4>
+                                <p>Spacious open courtyard style tables with children-safe play areas, high chairs, and clean toilets.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4>Wide Variety of Veg & Non-Veg Options</h4>
+                                <p>Dedicated separate kitchens and cookware for pure-vegetarians and hearty non-vegetarians.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4>Consistently Rated 4.2+ Stars</h4>
+                                <p>Cherished as the go-to dining location on Nellore Road, Pamuru by thousands of happy locals.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="why-visual-side scroll-animate fade-in-right">
+                    <div class="glow-bg"></div>
+                    <div class="why-card">
+                        <div class="why-rating-top">
+                            <span class="stars-row">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </span>
+                            <span class="rating-label">4.2 / 5 Ratings</span>
+                        </div>
+                        <h3>Pamuru's Certified Choice</h3>
+                        <p class="why-rating-desc">“Clean kitchens, quick drive-through lanes, and premium taste have made us a household name. Come celebrate with us!”</p>
+                        
+                        <div class="customers-avatars">
+                            <div class="avatars-row">
+                                <div class="avatar-circle">M</div>
+                                <div class="avatar-circle">K</div>
+                                <div class="avatar-circle">S</div>
+                                <div class="avatar-circle">V</div>
+                            </div>
+                            <span class="avatars-text">Over 1,200+ online reviews and local check-ins!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our Guests <span class="gold-text">Say</span></h2>
+                <p class="section-subtitle">Real feedback from families, corporate groups, and students from Pamuru.</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-meta">
+                            <h4>Kalyan Kumar</h4>
+                            <span>Google Local Guide</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">“One of the best dhabas in Pamur. Food is so tasty. The Tirumala Special Biryani has this perfect spice blend and rich cashew garnishing. Highly recommend with friends.”</p>
+                    <span class="tag-dining">Dined: Dine-In</span>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-meta">
+                            <h4>Prasanna Reddy</h4>
+                            <span>Family Outing</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">“Finding restaurants with clean restrooms and high chairs for babies is tough around Pamuru, but Tirumala Garden is spacious and very child-friendly. Excellent Paneer special and soft Naan.”</p>
+                    <span class="tag-dining">Dined: Family Dinner</span>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-meta">
+                            <h4>Suresh Babu</h4>
+                            <span>Tech Team Lead</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">“We had our corporate team lunch of 20 people here. Service was prompt, parking was effortless, and the Chicken Majestic starter got vanished in minutes. Very affordable for group bills.”</p>
+                    <span class="tag-dining">Dined: Corporate Lunch</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Visual Feast</span>
+                <h2 class="section-title">Glimpses of <span class="gold-text">Tirumala Garden</span></h2>
+                <p class="section-subtitle">Browse through our mouthwatering specialties and cozy dining setups.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/hero_biryani.jpg" alt="Rich basmati rice layered biryani platter">
+                    <div class="gallery-overlay">
+                        <h3>Tirumala Special Biryani</h3>
+                        <span>Signature Dish</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/chicken_lollipop.jpg" alt="Crispy chicken lollipop starter">
+                    <div class="gallery-overlay">
+                        <h3>Crispy Chicken Lollipop</h3>
+                        <span>Hot Appetizer</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/chicken_majestic.jpg" alt="Stir fried yoghurt pepper chicken majestic">
+                    <div class="gallery-overlay">
+                        <h3>Hyderabad Chicken Majestic</h3>
+                        <span>Starter Star</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/paneer_special.jpg" alt="Creamy Paneer Butter Curry">
+                    <div class="gallery-overlay">
+                        <h3>Paneer Kaju Masala</h3>
+                        <span>Vegetarian Classic</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/garden_dining.jpg" alt="Dusk garden vibe with fairy lights">
+                    <div class="gallery-overlay">
+                        <h3>Outdoor Dining Lawn</h3>
+                        <span>Garden Ambiance</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/hero_biryani.jpg" alt="Juicy Andhra chicken curry" class="placeholder-adjust">
+                    <div class="gallery-overlay">
+                        <h3>Andhra Curry Specials</h3>
+                        <span>Traditional Gravies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card-wrapper">
+                <div class="contact-info-panel">
+                    <span class="panel-tag">Get in Touch</span>
+                    <h2>Find Us & <span class="gold-text">Say Hello</span></h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div>
+                                <h4>Our Address</h4>
+                                <p>Nellore Rd, 3CP6+P33, Pamuru, Andhra Pradesh 523108</p>
+                                <a href="https://maps.google.com/?q=Tirumala+Garden+Restaurant+Pamuru" target="_blank" class="directions-link"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p><a href="tel:08309646462">08309646462</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p><strong>Mon – Sat:</strong> 11:30 AM – 10:30 PM</p>
+                                <p><strong>Sunday:</strong> 11:30 AM – 11:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-row">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Google reviews"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-map-panel">
+                    <div id="restaurant-map" class="map-container">
+                        <!-- Map gets loaded here by script.js using Leaflet -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-leaf"><i class="fa-solid fa-leaf"></i></span>
+                        Tirumala <span class="accent-text">Garden</span>
+                    </a>
+                    <p>Elevating local dhaba traditions into a premium garden-style dining experience. Fresh ingredients, family ambiance, and unbeatable taste in Pamuru.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#services">Dining Services</a></li>
+                        <li><a href="#contact">Contact & Map</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-cta">
+                    <h3>Join Us for Dinner</h3>
+                    <p>Reserve a cozy space in our garden or order online for superfast home delivery.</p>
+                    <div class="footer-btns">
+                        <button class="btn btn-primary btn-cart-trigger"><i class="fa-solid fa-bag-shopping"></i> Order Online</button>
+                        <button class="btn btn-outline btn-book-trigger"><i class="fa-solid fa-calendar"></i> Book Table</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tirumala Garden Restaurant. All Rights Reserved. Crafted with <i class="fa-solid fa-heart red-text"></i> for Pamuru.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-box">
+            <button class="modal-close" aria-label="Close booking modal">&times;</button>
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-calendar-days gold-text"></i> Book A Table</h2>
+                <p>Reserve your garden table. No reservation fee required.</p>
+            </div>
+            <form id="booking-form" class="modal-form">
+                <div class="form-group">
+                    <label for="book-name">Full Name</label>
+                    <input type="text" id="book-name" required placeholder="Enter your name">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="book-phone">Phone Number</label>
+                        <input type="tel" id="book-phone" required placeholder="08309646462">
+                    </div>
+                    <div class="form-group">
+                        <label for="book-guests">Number of Guests</label>
+                        <select id="book-guests" required>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4" selected>4 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="8">8 Guests</option>
+                            <option value="12">12+ (Group/Party)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="book-date">Date</label>
+                        <input type="date" id="book-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-time">Preferred Time</label>
+                        <input type="time" id="book-time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="book-seating">Seating Preference</label>
+                    <select id="book-seating">
+                        <option value="garden">Open-Air Garden Lawn (Recommended)</option>
+                        <option value="ac">Indoor Air-Conditioned Seating</option>
+                        <option value="private">Private Family Cubicle</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Online / Cart Drawer Modal -->
+    <div class="modal-overlay" id="cart-drawer">
+        <div class="drawer-box">
+            <div class="drawer-header">
+                <h2><i class="fa-solid fa-basket-shopping gold-text"></i> Your Cart</h2>
+                <button class="drawer-close" aria-label="Close cart">&times;</button>
+            </div>
+            
+            <div class="drawer-body">
+                <!-- Cart Items Container -->
+                <div class="cart-items-list" id="cart-items-container">
+                    <!-- Empty State -->
+                    <div class="cart-empty-state">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>Your cart is empty.</p>
+                        <p class="sub">Add delicious specialties from our menu!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="drawer-footer">
+                <div class="price-summary-row">
+                    <span>Subtotal</span>
+                    <span class="subtotal-val" id="cart-subtotal">₹0</span>
+                </div>
+                <div class="price-summary-row">
+                    <span>GST (5%)</span>
+                    <span class="gst-val" id="cart-gst">₹0</span>
+                </div>
+                <div class="price-summary-row total-row">
+                    <span>Total Amount</span>
+                    <span class="total-val" id="cart-total">₹0</span>
+                </div>
+                
+                <div class="order-type-select">
+                    <label>Dining/Order Mode:</label>
+                    <select id="order-mode">
+                        <option value="delivery">Home Delivery (Pamuru)</option>
+                        <option value="takeout">Self-Takeout</option>
+                        <option value="drive-thru">Drive-Through Lane Pickup</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn-primary btn-full" id="checkout-btn" disabled>Proceed to Mock Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Feedback Alert Dialog -->
+    <div class="success-alert-dialog" id="success-dialog">
+        <div class="alert-box">
+            <div class="alert-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3 id="alert-title">Reservation Success</h3>
+            <p id="alert-message">Your table booking has been locked in. We will SMS/Call you shortly!</p>
+            <button class="btn btn-secondary" id="alert-close-btn">Awesome</button>
+        </div>
+    </div>
+
+    <!-- Floating Order Widget for Mobile -->
+    <div class="mobile-floating-cart-bar" id="mobile-floating-bar">
+        <div class="info-side">
+            <span class="item-count" id="mobile-cart-count">3 Items</span>
+            <span class="total-cost" id="mobile-cart-total">₹840</span>
+        </div>
+        <button class="btn btn-primary btn-cart-trigger"><i class="fa-solid fa-bag-shopping"></i> View Cart</button>
+    </div>
+
+    <!-- Leaflet JS Script -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Custom JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
