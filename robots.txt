@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nowshiyashaik4-code.github.io/restaurant-website/sitemap.xml
